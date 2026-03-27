@@ -44,7 +44,7 @@ export function Navbar({ onOpenMoodSelector, currentMood }: NavbarProps) {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <img src="/src/assets/logo-monkey.jpg" alt="Always Sunday India" className="w-10 h-10 rounded-full object-cover border-2 border-[#ff8c42] shadow-md" />
+          <img src="/assets/logo-monkey.jpg" alt="Always Sunday India" className="w-10 h-10 rounded-full object-cover border-2 border-[#ff8c42] shadow-md" />
           <div>
             <p className="text-xl" style={{ fontWeight: 800 }}>
               Always Sunday
