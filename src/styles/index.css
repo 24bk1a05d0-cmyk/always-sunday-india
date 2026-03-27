@@ -1,0 +1,60 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fffbf5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff8c42 0%, #ffd166 100%);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ff8c42 0%, #ff8c42 100%);
+}
+
+/* Selection Color */
+::selection {
+  background-color: #ff8c42;
+  color: white;
+}
+
+/* Glassmorphism utilities */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Mood theme variables */
+:root {
+  --mood-gradient: linear-gradient(135deg, #ff8c42 0%, #ffd166 100%);
+  --mood-color: #ff8c42;
+}
